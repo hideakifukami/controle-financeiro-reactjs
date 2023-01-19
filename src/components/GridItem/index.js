@@ -7,11 +7,15 @@ import {
 } from "react-icons/fa";
 
 const GridItem = ({ item, onDelete }) => {
+
+  const amountNumber = Number(item.amount)
+  const amount = `R$ ${amountNumber.toFixed(2)}`
+
   return (
     <C.Tr>
       <C.Td>{item.desc}</C.Td>
-      <C.Td>{item.amount}</C.Td>
-      <C.Td>
+      <C.Td>{amount}</C.Td>
+      <C.Td alignCenter>
         {item.expense ? (
           <FaRegArrowAltCircleDown color='red' />
         ) : (

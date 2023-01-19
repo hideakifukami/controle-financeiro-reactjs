@@ -40,7 +40,7 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
                 </C.InputContent>
                 <C.InputContent>
                     <C.Label>Valor</C.Label>
-                    <C.Input value={amount} type="number" onChange={(e) =>setAmount(e.target.value)} />
+                <C.Input value={amount} type="number" onChange={(e) =>setAmount(e.target.value)} />
                 </C.InputContent>
                 <C.RadioGroup>
                     <C.Input 
